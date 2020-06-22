@@ -28,3 +28,12 @@ db.<collection>.aggregate(
   - `cost`: 物品成本；
   - `qty`: 购买件数；
   - `sku`: 产品唯一编号；
+
+## 导入数据
+
+```bash
+# 解压实验数据文件
+tar -zxvf dump.tar.gz
+# 将实验数据导入到MongoDB
+mongorestore -h 127.0.0.1:27017 dump
+```
